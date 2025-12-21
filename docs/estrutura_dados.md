@@ -26,123 +26,115 @@ As vagas foram coletadas manualmente a partir do LinkedIn utilizando a seguinte 
 ##  Prompt para extrair dados do LinkedIn
 
 ```
+# PROMPT FINAL — EXTRAÇÃO DE VAGAS (TSV COM VALIDAÇÃO DE COLUNAS)
+
 Você vai receber a descrição completa de uma vaga de emprego.
 
-Seu objetivo é extrair os dados para DUAS abas de Excel:
+Seu objetivo é extrair os dados para **DUAS abas de Excel**, no formato **TSV (Tab-Separated Values)**:
+- `vagas`
+- `skills`
 
-vagas
+⚠️ **REGRAS CRÍTICAS — NÃO IGNORAR**
 
-skills
+## 1️⃣ Validação estrutural obrigatória
+- A aba **`vagas` DEVE TER EXATAMENTE 20 COLUNAS**
+- A aba **`skills` DEVE TER EXATAMENTE 6 COLUNAS**
+- **NUNCA** pode haver deslocamento de dados entre colunas
+- **Toda coluna inexistente deve ser representada por um TAB vazio**
+- **Antes de enviar o resultado final, valide mentalmente coluna por coluna**
 
-⚠️ REGRAS CRÍTICAS (NÃO IGNORAR)
+## 2️⃣ Regras TSV (OBRIGATÓRIAS)
+- Separador: **TAB**
+- **Nunca usar vírgula como separador**
+- Campos podem conter vírgulas, ponto e vírgula e textos longos **sem aspas**
+- **Coluna vazia = TAB TAB**
+- O output deve conter:
+  - `vagas` → **19 TABs**
+  - `skills` → **5 TABs por linha**
 
-A aba "vagas" DEVE TER EXATAMENTE 20 COLUNAS, NA ORDEM FIXA ABAIXO.
+## 3️⃣ Regras absolutas de output
+- ❌ NÃO explicar nada no output final
+- ❌ NÃO adicionar títulos
+- ❌ NÃO adicionar comentários
+- ❌ NÃO adicionar linhas em branco
+- ❌ NÃO repetir cabeçalhos
+- ❌ NÃO agrupar múltiplas vagas
 
-A aba "skills" DEVE TER EXATAMENTE 6 COLUNAS, NA ORDEM FIXA ABAIXO.
+---
 
-Se uma informação não existir, deixe o campo VAZIO, mas mantenha o TAB.
+## 📊 ESTRUTURA DAS ABAS
 
-⚠️ FORMATO OBRIGATÓRIO: TSV (TAB-SEPARATED VALUES)
+### ABA `vagas` — ORDEM FIXA (20 colunas)
 
-Os campos DEVEM ser separados por TAB (não vírgula).
+1. ID  
+2. Empresa  
+3. Cargo  
+4. Modelo_Trab  
+5. Area_Atuacao  
+6. Data  
+7. Nível  
+8. Salario  
+9. Link_Vaga  
+10. Destaque  
+11. Localizacao  
+12. Tipo_Contratacao  
+13. Num_Candidatos  
+14. Idiomas  
+15. Beneficios  
+16. Departamento  
+17. Ferramentas_Específicas  
+18. Remoto  
+19. Categoria  
+20. Fonte_Vaga  
 
-NÃO usar vírgulas como separador de colunas.
+---
 
-NÃO usar aspas para tratar vírgulas (vírgulas são permitidas dentro do texto).
+### ABA `skills` — ORDEM FIXA (6 colunas)
 
-NÃO criar colunas extras.
+1. Vaga_ID  
+2. Skill  
+3. Tipo  
+4. Nivel_Conhecimento  
+5. Obrigatoria  
+6. Categoria  
 
-NÃO mover informações entre colunas.
+---
 
-NÃO explicar nada no output final.
+## 📌 REGRAS DE EXTRAÇÃO
 
-==================================================
-ABA "vagas" (1 linha por vaga)
-ORDEM FIXA DAS COLUNAS (20):
+- Data padrão se ausente: **18/01/2024**
+- Nível SOMENTE se explícito: **Júnior | Pleno | Sênior**
+- Skills obrigatórias:
+  - termos como: *requisito, necessário, obrigatório*
+- Skills diferenciais:
+  - termos como: *desejável, diferencial, plus*
+- Nivel_Conhecimento somente se explícito
+- Obrigatoria:
+  - **Sim** = obrigatória
+  - **Não** = diferencial
+- Categoria da vaga: resumo da área principal (ex: Dados)
+- Fonte_Vaga: origem explícita (ex: LinkedIn)
+- Usar o **MESMO ID da vaga** em todas as skills
+- NÃO repetir skills
+- NÃO inferir informações não explícitas
 
-ID
-Empresa
-Cargo
-Modelo_Trab
-Area_Atuacao
-Data
-Nível
-Salario
-Link_Vaga
-Destaque
-Localizacao
-Tipo_Contratacao
-Num_Candidatos
-Idiomas
-Beneficios
-Departamento
-Ferramentas_Específicas
-Remoto
-Categoria
-Fonte_Vaga
+---
 
-==================================================
-ABA "skills" (1 linha por skill)
-ORDEM FIXA DAS COLUNAS (6):
+## 📤 FORMATO FINAL DE SAÍDA (POWERSHELL / TSV)
 
-Vaga_ID
-Skill
-Tipo
-Nivel_Conhecimento
-Obrigatoria
-Categoria
+### BLOCO 1 — ABA `vagas`
+- Enviar **APENAS uma linha TSV**
+- Deve conter exatamente **20 colunas (19 TABs)**
+- Nenhuma validação textual ou explicação
 
-==================================================
-REGRAS DE EXTRAÇÃO
+### BLOCO 2 — ABA `skills`
+- Enviar **APENAS linhas TSV**
+- Uma skill por linha
+- Cada linha deve conter exatamente **6 colunas (5 TABs)**
 
-Data padrão se ausente: 18/01/2024
-
-Nível SOMENTE se explícito: Júnior | Pleno | Sênior
-
-Skills obrigatórias: termos como requisito, necessário, obrigatório
-
-Skills diferenciais: termos como desejável, diferencial, plus
-
-Nivel_Conhecimento somente se explícito
-
-Obrigatoria:
-
-Sim = obrigatória
-
-Não = diferencial
-
-Categoria da vaga: resumo da área principal (ex: Dados)
-
-Fonte_Vaga: origem explícita (ex: LinkedIn)
-
-Usar o MESMO ID da vaga em todas as skills
-
-NÃO repetir cabeçalhos
-
-NÃO agrupar múltiplas vagas
-
-==================================================
-FORMATO FINAL DE SAÍDA (POWERSHELL)
-
-BLOCO 1 — ABA VAGAS
-• Enviar APENAS 1 linha TSV
-• Campos separados por TAB
-• Exatamente 20 colunas
-• NÃO adicionar comentários
-• NÃO adicionar títulos
-• NÃO adicionar linhas em branco
-
-BLOCO 2 — ABA SKILLS
-• Enviar múltiplas linhas TSV
-• 1 skill por linha
-• Campos separados por TAB
-• Exatamente 6 colunas por linha
-• NÃO adicionar comentários
-• NÃO adicionar títulos
-
-==================================================
+---
 
 Descrição da vaga:
-[COLE AQUI A DESCRIÇÃO COMPLETA]
+
 
 ```
