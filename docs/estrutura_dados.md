@@ -26,46 +26,40 @@ As vagas foram coletadas manualmente a partir do LinkedIn utilizando a seguinte 
 ##  Prompt para extrair dados do LinkedIn
 
 ```
-# PROMPT FINAL — EXTRAÇÃO DE VAGAS (TSV COM VALIDAÇÃO DE COLUNAS)
+# PROMPT FINAL AJUSTADO — EXTRAÇÃO DE VAGAS (TSV PURO)
 
 Você vai receber a descrição completa de uma vaga de emprego.
 
 Seu objetivo é extrair os dados para **DUAS abas de Excel**, no formato **TSV (Tab-Separated Values)**:
-- `vagas`
-- `skills`
+
+- Aba 1: `vagas` (13 colunas)  
+- Aba 2: `skills` (6 colunas)  
 
 ⚠️ **REGRAS CRÍTICAS — NÃO IGNORAR**
 
-## 1️⃣ Validação estrutural obrigatória
-- A aba **`vagas` DEVE TER EXATAMENTE 20 COLUNAS**
-- A aba **`skills` DEVE TER EXATAMENTE 6 COLUNAS**
-- **NUNCA** pode haver deslocamento de dados entre colunas
-- **Toda coluna inexistente deve ser representada por um TAB vazio**
-- **Antes de enviar o resultado final, valide mentalmente coluna por coluna**
+## 1️⃣ Estrutura e validação obrigatória
+- Aba **`vagas` DEVE TER EXATAMENTE 13 COLUNAS**  
+- Aba **`skills` DEVE TER EXATAMENTE 6 COLUNAS**  
+- **NUNCA** pode haver deslocamento de dados entre colunas  
+- **Toda coluna inexistente deve ser representada por um TAB vazio**  
+- Validar mentalmente a quantidade de colunas antes do envio  
 
-## 2️⃣ Regras TSV (OBRIGATÓRIAS)
-- Separador: **TAB**
-- **Nunca usar vírgula como separador**
-- Campos podem conter vírgulas, ponto e vírgula e textos longos **sem aspas**
-- **Coluna vazia = TAB TAB**
-- O output deve conter:
-  - `vagas` → **19 TABs**
-  - `skills` → **5 TABs por linha**
+## 2️⃣ Regras TSV obrigatórias
+- Separador: **TAB**  
+- **Nunca usar vírgula como separador**  
+- Campos podem conter vírgulas, ponto e vírgula e textos longos **sem aspas**  
+- Coluna vazia = TAB  
 
 ## 3️⃣ Regras absolutas de output
-- ❌ NÃO explicar nada no output final
-- ❌ NÃO adicionar títulos
-- ❌ NÃO adicionar comentários
-- ❌ NÃO adicionar linhas em branco
-- ❌ NÃO repetir cabeçalhos
-- ❌ NÃO agrupar múltiplas vagas
+- **O OUTPUT DEVE CONTER APENAS OS DADOS TSV**, sem qualquer código, comentário, explicação ou linha extra  
+- OUTPUT SEMPRE EM CODIGO POWERSHELL
+- Cada aba deve ser apresentada separadamente, primeiro `vagas` depois `skills`  
+- Nunca misturar os dois conjuntos de dados  
+- Nenhum cabeçalho ou linha de separação deve ser incluído  
 
----
+## 4️⃣ Estrutura das abas
 
-## 📊 ESTRUTURA DAS ABAS
-
-### ABA `vagas` — ORDEM FIXA (20 colunas)
-
+### Aba `vagas` (14 colunas)
 1. ID  
 2. Empresa  
 3. Cargo  
@@ -73,24 +67,14 @@ Seu objetivo é extrair os dados para **DUAS abas de Excel**, no formato **TSV (
 5. Area_Atuacao  
 6. Data  
 7. Nível  
-8. Salario  
-9. Link_Vaga  
-10. Destaque  
-11. Localizacao  
-12. Tipo_Contratacao  
-13. Num_Candidatos  
-14. Idiomas  
-15. Beneficios  
-16. Departamento  
-17. Ferramentas_Específicas  
-18. Remoto  
-19. Categoria  
-20. Fonte_Vaga  
+8. Localizacao  
+9. Tipo_Contratacao  
+10. Ferramentas_Específicas  
+11. Remoto  
+12. Categoria  
+13. Fonte_Vaga  
 
----
-
-### ABA `skills` — ORDEM FIXA (6 colunas)
-
+### Aba `skills` (6 colunas)
 1. Vaga_ID  
 2. Skill  
 3. Tipo  
@@ -98,43 +82,28 @@ Seu objetivo é extrair os dados para **DUAS abas de Excel**, no formato **TSV (
 5. Obrigatoria  
 6. Categoria  
 
----
+## 5️⃣ Regras de extração
+- Data padrão se ausente: **18/01/2024**  
+- Nível SOMENTE se explícito: **Júnior | Pleno | Sênior**  
+- Skills obrigatórias: termos como *requisito, necessário, obrigatório*  
+- Skills diferenciais: termos como *desejável, diferencial, plus*  
 
-## 📌 REGRAS DE EXTRAÇÃO
+EXEMPLO DE OUTPUT
+--POP UP 1 DE POWESHELL(NAO ESCREVER ISSO NO OUTPUT, OUTPUT APENAS DADOS)
+38	UltraCon Consultoria	Analista de Dados	Presencial	Dados	21/12/2025	Júnior	Campinas, São Paulo, Brasil	Tempo integral	Python; Excel; Power Query; Power Automate; Automação de Processos; Dashboards; Análise de Dados	Sim	Dados	LinkedIn
 
-- Data padrão se ausente: **18/01/2024**
-- Nível SOMENTE se explícito: **Júnior | Pleno | Sênior**
-- Skills obrigatórias:
-  - termos como: *requisito, necessário, obrigatório*
-- Skills diferenciais:
-  - termos como: *desejável, diferencial, plus*
-- Nivel_Conhecimento somente se explícito
-- Obrigatoria:
-  - **Sim** = obrigatória
-  - **Não** = diferencial
-- Categoria da vaga: resumo da área principal (ex: Dados)
-- Fonte_Vaga: origem explícita (ex: LinkedIn)
-- Usar o **MESMO ID da vaga** em todas as skills
-- NÃO repetir skills
-- NÃO inferir informações não explícitas
+--POP UP 2 DE POWESHELL(NAO ESCREVER ISSO NO OUTPUT, OUTPUT APENAS DADOS)
+23	Python	Técnica		Sim	Dados
+23	Excel	Técnica		Sim	Dados
+23	Power Query	Técnica		Não	Dados
+23	Power Automate	Técnica		Não	Dados
+23	Automação de Processos	Técnica		Não	Dados
+23	Dashboards	Técnica		Não	Dados
+23	Análise de Dados	Técnica		Não	Dados
 
----
 
-## 📤 FORMATO FINAL DE SAÍDA (POWERSHELL / TSV)
 
-### BLOCO 1 — ABA `vagas`
-- Enviar **APENAS uma linha TSV**
-- Deve conter exatamente **20 colunas (19 TABs)**
-- Nenhuma validação textual ou explicação
 
-### BLOCO 2 — ABA `skills`
-- Enviar **APENAS linhas TSV**
-- Uma skill por linha
-- Cada linha deve conter exatamente **6 colunas (5 TABs)**
-
----
-
-Descrição da vaga:
 
 
 ```
