@@ -37,6 +37,17 @@ Essa abordagem garantiu **eficiência e confiabilidade** para o pipeline subsequ
 > 💡 Observação: Python permite **automatizar toda a cadeia de transformação**, tornando o fluxo de dados mais eficiente e escalável do que usar Excel para limpeza manual.
 
 ---
+## 📊 Pipeline do Projeto
+
+**Resumo das etapas:**
+1. **Coleta com IA** – Extrai dados estruturados de cada vaga.  
+2. **Processamento (Python)** – Limpeza, padronização e geração de CSV pronto para SQL.  
+3. **Análise (SQL)** – Criação de tabelas, views e queries para identificar padrões e tendências.  
+4. **Visualização (Power BI)** – Dashboards interativos filtráveis por skill, empresa e localização.  
+5. **Documentação (GitHub)** – Registro completo do pipeline, metodologia e insights.
+
+
+---
 
 ## 📊 Pipeline do Projeto 
 
@@ -64,98 +75,16 @@ Essa abordagem garantiu **eficiência e confiabilidade** para o pipeline subsequ
 
 ---
 
-## 🔹Observações do Pipeline
-
-IA: captura dados estruturados diretamente da vaga.
-
-Excel: apenas revisão e visualização inicial; Python é mais eficiente para limpeza.
-
-Python: padroniza skills, cargos e empresas, corrige inconsistências, remove duplicatas e gera CSV pronto para SQL.
-
-SQL: cria tabelas, views e queries para análise.
-
-Power BI: dashboards interativos para exploração de insights.
-
-Documentação: GitHub com histórico, metodologia e dashboards.
-
----
-
-job-market-analysis/
-│
-├── 📄 README.md                 # Documentação principal
-├── 📚 docs/                     # Documentação detalhada
-│   ├── 01_contexto.md          # Contexto e objetivos
-│   ├── 02_metodologia.md       # Métodos de coleta e análise
-│   └── 03_resultados.md        # Insights e descobertas
-│
-├── 📊 data/                    # Dados
-│   ├── raw/                    # Brutos (não versionado)
-│   ├── processed/              # Processados
-│   └── database/               # Banco SQLite (.db)
-│
-├── 🐍 src/                     # Código Python
-│   ├── collect/                # Coleta de dados
-│   ├── process/                # ETL e limpeza
-│   └── analyze/                # Análises
-│
-├── 🗄️ sql/                     # Scripts SQL
-│   ├── ddl/                    # Definição de tabelas
-│   ├── queries/                # Consultas analíticas
-│   └── views/                  # Views para Power BI
-│
-├── 📓 notebooks/               # Análises exploratórias
-├── 📈 dashboards/              # Arquivos Power BI
-└── 🤖 prompts/                 # Prompts de IA utilizados
-
-
-job-market-analysis/
-│
-├── README.md
-├── docs/ # Documentação detalhada
-│ ├── 01_contexto.md
-│ ├── 02_metodologia.md
-│ ├── 03_resultados.md
-│ └── 04_tratamento_e_transformacoes.md
-│
-├── data/
-│ ├── raw/ # Dados brutos
-│ ├── processed/ # CSV pronto para SQL
-│ └── samples/ # Exemplos de dados
-│
-├── src/ # Código Python
-│ ├── collect/
-│ ├── process/
-│ └── analyze/
-│
-├── sql/
-│ ├── ddl/
-│ ├── transformations/
-│ └── views/
-│
-├── notebooks/ # Análises exploratórias
-├── dashboards/ # Arquivos Power BI
-└── prompts/ # Prompts de IA
----
-
 ## ✅ Status Atual
 - [x] Estrutura de pastas criada  
 - [x] Coleta de dados inicial (10 vagas)  
-- [x] Modelagem do banco de dados  
-- [x] Primeiras análises  
-- [x] Dashboard inicial  
-
----
-
-## 🚀 Próximos Passos
-- Automatizar coleta e extração via IA com novos prompts  
-- Criar rotinas Python para atualização automática dos dados  
-- Desenvolver dashboards avançados no Power BI  
-- Documentar métricas e análises para portfólio  
-- Avaliar integração de novas fontes de vagas
+- [] Modelagem do banco de dados  
+- [] Primeiras análises  
+- [] Dashboard inicial  
 
 ---
 
 ## 🔹 Observações Finais
 - Pipeline eficiente, contornando limitações do LinkedIn  
-- Uso integrado de IA, Python, SQL e Power BI (Excel como revisão rápida)  
+- Uso integrado de IA, Python, SQL, Power BI e Excel
 - Documentação clara, garantindo transparência e profissionalismo para portfólio
