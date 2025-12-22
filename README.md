@@ -43,8 +43,8 @@ O fluxo do projeto segue:
 ---
 
 ## ✅ Status Atual
-- [ ] Estrutura de pastas criada  
-- [ ] Coleta de dados inicial (10 vagas)  
+- [x] Estrutura de pastas criada  
+- [x] Coleta de dados inicial 
 - [ ] Modelagem do banco de dados  
 - [ ] Primeiras análises  
 - [ ] Dashboard inicial  
