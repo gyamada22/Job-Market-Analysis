@@ -1,17 +1,23 @@
-# Job Market Analysis — Análise de Requisitos de Vagas
+# Job Market Analysis — Análise de Requisitos de Vagas em Dados
 
 ## 🖥️ Descrição do Projeto
-- Este projeto tem como objetivo analisar **vagas de emprego na área de dados** e extrair insights sobre os **requisitos de skills** mais demandados pelo mercado.
-- O objetivo é transformar dados não estruturados em **insights visuais e dashboards interativos**, documentando todo o pipeline de forma profissional.
+Este projeto tem como objetivo analisar **vagas reais de emprego na área de dados**, coletadas a partir de plataformas de recrutamento (ex: LinkedIn), para extrair insights sobre **skills demandadas, tendências do mercado e gaps de competências**.
+
+A análise é inicialmente focada no **mercado brasileiro**, com posterior **comparação com dados internacionais**, visando identificar padrões globais e possíveis tendências que podem chegar ao Brasil no futuro.
+
+O projeto transforma dados não estruturados em **insights analíticos e dashboards interativos**, documentando todo o pipeline de dados de forma clara e profissional.
 
 ---
 
 ## 🎯 Objetivos
-- Coletar informações de vagas: empresa, cargo, localização, data, skills obrigatórias e diferenciais.  
-- Padronizar e organizar os dados para análise.  
-- Identificar skills mais demandadas, combinações e tendências.  
-- Criar dashboards interativos para exploração visual.  
-- Documentar todo o processo, mostrando pipeline completo de dados.
+- Coletar dados de vagas reais: empresa, cargo, localização, data, nível de senioridade e requisitos técnicos.  
+- Padronizar e estruturar dados textuais não estruturados (descrições de vagas).  
+- Identificar **skills mais demandadas** por área e nível (estágio, júnior, pleno, sênior).  
+- Analisar **diferenças e gaps de competências** entre níveis de senioridade.  
+- Comparar o mercado brasileiro com dados internacionais para identificar **tendências emergentes**.  
+- Criar dashboards interativos que apoiem **decisões de carreira e estudo**.  
+- Documentar todo o pipeline: **coleta → limpeza → análise → visualização**.
+
 ---
 
 ## 🔹 Coleta de Dados
