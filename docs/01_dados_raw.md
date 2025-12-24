@@ -23,7 +23,7 @@ Este arquivo contém os dados coletados diretamente das plataformas de recrutame
 
 ---
 
-### 1️⃣ Aba `vagas`
+### 1️⃣ Aba `Vagas`
 
 | Coluna | Descrição | Tipo de dado | Observações |
 |--------|-----------|-------------|------------|
@@ -44,7 +44,7 @@ Este arquivo contém os dados coletados diretamente das plataformas de recrutame
 
 ---
 
-### 2️⃣ Aba `skills`
+### 2️⃣ Aba `Skills`
 
 | Coluna | Descrição | Tipo de dado | Observações |
 |--------|-----------|-------------|------------|
@@ -59,6 +59,7 @@ Este arquivo contém os dados coletados diretamente das plataformas de recrutame
 
 ## 💡 Observações Gerais
 
-- Os dados são **não processados**, portanto podem conter inconsistências, duplicatas ou variações de grafia.  
-- A coluna `ID` na aba `vagas` é **crucial** para relacionar com as skills na aba `skills`.  
-- O próximo passo no pipeline é **limpeza e padronização** utilizando Python, preparando os dados para análise e modelagem em SQL ou Power BI.
+- Os dados estão **no estado raw**, ou seja, **não processados**, podendo conter inconsistências, duplicatas ou variações de grafia.  
+- A coluna `ID` da aba `vagas` é a **chave primária**, essencial para relacionar com as skills na aba `skills`.  
+- O próximo passo do pipeline é **limpeza e padronização** usando Python, preparando os dados para **análise, modelagem em SQL e visualização em Power BI**.
+
