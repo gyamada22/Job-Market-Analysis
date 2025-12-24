@@ -4,14 +4,6 @@ Este documento descreve a **estrutura de abas do Excel** e o **prompt usado para
 
 ---
 
-##  Estrutura das abas do Excel
-
-### Aba `vagas`
-ID, Empresa, Setor, Cargo, Modelo_Trabalho, Area_Atuacao, Data, Senioridade, Localizacao, Tipo_Contratacao, Ferramentas_Específicas, Remoto, Categoria, Fonte_Vaga
-
-### Aba `skills`
-Colunas:  Vaga_ID, Skill, Tipo, Nivel_Conhecimento, Obrigatório/Diferencial, Categoria
-
 ## Estrutura Utilizada no Projeto
 
 Embora a coleta tenha contemplado um conjunto mais amplo de informações sobre as vagas, **nesta etapa do projeto foi realizado um recorte intencional**, selecionando apenas as colunas **estritamente necessárias** para atender aos objetivos analíticos definidos.
