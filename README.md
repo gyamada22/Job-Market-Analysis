@@ -27,9 +27,9 @@ O fluxo do projeto segue:
 | Etapa | Ferramenta | Função |
 |-------|------------|------|
 | Coleta & extração | IA via prompts | Extrai dados estruturados da vaga |
-| Visualização inicial | Excel | Conferência e revisão rápida |
-| Limpeza e padronização | Python | Padroniza dados, corrige inconsistências, remove duplicatas e gera CSV pronto para SQL |
-| Modelagem e análise | SQL | Criação de tabelas, views e queries analíticas |
+| Visualização inicial | Excel | Conferência e revisão rápida. Arquivo: [Raw Data](data/raw/Vagas_Coletadas_Raw.xlsx) |
+| Limpeza e padronização | Python | Padroniza dados, corrige inconsistências e gera Excel/SQL.Arquivo: [Cleaned Data](data/cleaned/Vagas_Coletadas_Cleaned.xlsx), Script: [ETL.py](data/ETL.py) |
+| Modelagem e análise | SQL | Criação de tabelas, views e queries analíticas. *(Em desenvolvimento)* |
 | Dashboards | Power BI | Visualização interativa, insights e storytelling |
 | Documentação | GitHub | Registro completo do projeto, metodologia e exemplos de dashboards |
 
