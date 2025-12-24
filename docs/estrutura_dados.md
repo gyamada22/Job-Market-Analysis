@@ -11,10 +11,10 @@ Embora a coleta tenha contemplado um conjunto mais amplo de informações sobre 
 Essa abordagem permite maior foco, clareza e consistência nas análises, além de facilitar a evolução futura do projeto sem retrabalho na coleta.
 
 ### Aba `vagas`
-ID, Empresa, Setor, Cargo, Modelo_Trabalho, Localização, Senioridade
+Id, Empresa, Setor, Cargo, Modalidade, Localização, Senioridade
 
 ### Aba `skills`
-Vaga_ID, Skill, Obrigatório/Diferencial
+Vaga_Id, Skill, Requisito
 
 ---
 
