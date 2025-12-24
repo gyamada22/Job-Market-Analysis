@@ -87,27 +87,8 @@ Seu objetivo é extrair os dados para **DUAS abas de Excel**, no formato **TSV (
 6. Categoria  
 
 ## 5️⃣ Regras de extração
-- Data padrão se ausente: **18/01/2024**  
 - Nível SOMENTE se explícito: **Júnior | Pleno | Sênior**  
 - Skills obrigatórias: termos como *requisito, necessário, obrigatório*  
 - Skills diferenciais: termos como *desejável, diferencial, plus*  
-
-EXEMPLO DE OUTPUT
---POP UP 1 DE POWESHELL(NAO ESCREVER ISSO NO OUTPUT, OUTPUT APENAS DADOS)
-38	UltraCon Consultoria	Analista de Dados	Presencial	Dados	21/12/2025	Júnior	Campinas, São Paulo, Brasil	Tempo integral	Python; Excel; Power Query; Power Automate; Automação de Processos; Dashboards; Análise de Dados	Sim	Dados	LinkedIn
-
---POP UP 2 DE POWESHELL(NAO ESCREVER ISSO NO OUTPUT, OUTPUT APENAS DADOS)
-23	Python	Técnica		Sim	Dados
-23	Excel	Técnica		Sim	Dados
-23	Power Query	Técnica		Não	Dados
-23	Power Automate	Técnica		Não	Dados
-23	Automação de Processos	Técnica		Não	Dados
-23	Dashboards	Técnica		Não	Dados
-23	Análise de Dados	Técnica		Não	Dados
-
-
-
-
-
 
 ```
