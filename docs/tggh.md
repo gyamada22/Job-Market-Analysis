@@ -3,9 +3,6 @@ A Evolução do Mercado de Dados no Brasil: O Analista Cientista de Dados
 Introdução:
 O mercado de dados no Brasil está em franca evolução, com uma crescente demanda por profissionais híbridos que dominem tanto as ferramentas de visualização, como o Power BI, quanto as técnicas avançadas de modelagem preditiva, como Python e Machine Learning. A linha entre o Analista de Dados e o Cientista de Dados tem se estreitado, refletindo a necessidade de profissionais que se destaquem em múltiplos aspectos da análise de dados. As empresas, especialmente as de médio porte, buscam esses profissionais multifacetados para otimizar suas decisões estratégicas.
 
-Perfil Ideal: O Analista Cientista de Dados
-O perfil ideal do profissional moderno no mercado de dados brasileiro é de um analista cientista de dados, um profissional capaz de transitar entre o entendimento e a comunicação de dados, com forte domínio de ferramentas como Power BI, e habilidades técnicas robustas, como Python, SQL e ETL. O Power BI é central, essencial para todos os níveis de senioridade, mas à medida que o profissional avança, se exige uma combinação de habilidades técnicas mais aprofundadas, como a construção de pipelines de dados completos, implementação de modelos de Machine Learning e otimização de processos de dados.
-
 Habilidades Essenciais:
 
 Power BI – Essencial para criar visualizações impactantes e relatórios estratégicos. Dominá-lo é prioritário, sendo mais relevante do que aprender Python no início da carreira.
