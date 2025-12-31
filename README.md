@@ -26,7 +26,7 @@ O nível Júnior é dominado por ferramentas de BI e análise básica. Diferenci
 
 **Principais Insights**
 - **Obrigatório:** Power BI (81,82%), Excel Avançado (60,61%) e SQL (55,56%).
-- **Diferencial:** Python (27,03%) e Tableau (16,22%).
+- **Diferencial:** Python (27,03%), Tableau e Big Data (16,22%).
 - **Insight:** No nível Júnior, o domínio de ferramentas de visualização e planilhas ainda é o maior filtro de entrada.
 
 <p align="center">
@@ -44,7 +44,7 @@ No nível Pleno ocorre a transição crítica de BI para engenharia analítica. 
 
 **Principais Insights**
 - **Obrigatório:** Power BI (82,84%), SQL (79,10%) e Python (62,69%).
-- **Diferencial estratégico:** ETL (20,75%) e Machine Learning (20,75%).
+- **Diferencial estratégico:** ETL (20,75%), Machine Learning (20,75%) e Tableau (15,09%).
 - **Mudança estrutural:** A senioridade Pleno exige que o profissional saia da visualização e entre na manipulação e transformação de dados.
 
 <p align="center">
@@ -61,7 +61,7 @@ O foco no nível Sênior migra da análise para arquitetura, escala e governanç
 
 **Principais Insights**
 - **Obrigatório:** Power BI (85,94%), SQL (84,38%) e Python (71,88%).
-- **Diferencial dominante:** AWS (46,15%) e Big Data (42,31%).
+- **Diferencial dominante:** AWS (46,15%), Big Data (42,31%) e ETL (23,08%).
 - **Leitura técnica:** Senioridade está associada à capacidade de orquestrar pipelines e ambientes complexos
 
 <p align="center">
