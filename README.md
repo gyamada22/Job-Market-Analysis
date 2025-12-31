@@ -1,7 +1,7 @@
 # Análise do Mercado de Dados
 
 ##  Descrição do Projeto
-- Este projeto tem como objetivo analisar **vagas reais de emprego na área de dados**, coletadas a partir de plataformas de recrutamento (ex: LinkedIn), para extrair insights sobre **skills demandadas, tendências do mercado e gaps de competências**.
+- Este projeto tem como objetivo analisar **vagas reais de emprego na área de dados**, coletadas a partir de plataformas de recrutamento (LinkedIn), para extrair insights sobre **skills demandadas, tendências do mercado e gaps de competências**.
 
 - A análise é inicialmente focada no **mercado brasileiro**, com posterior **comparação com dados internacionais**, visando identificar padrões globais e possíveis tendências que podem chegar ao Brasil no futuro.
 
