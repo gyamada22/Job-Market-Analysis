@@ -1,51 +1,104 @@
+# Análise do Mercado de Dados — Evolução por Senioridade
 
-#  Análise do Mercado de Dados: Resumo do Projeto
+> 📌 **Projeto de Análise do Mercado de Dados Brasileiro**  
+> Baseado em vagas reais, utilizando IA para classificar competências técnicas por senioridade e nível de exigência (**Obrigatório** vs **Diferencial**).
 
 ---
 
 ## 1. Metodologia
-O projeto mapeou o mercado de dados brasileiro através da extração de informações de vagas reais, utilizando IA para converter descrições textuais em métricas de competências classificadas como **Obrigatório** ou **Diferencial**.
+
+O projeto mapeou o mercado de dados brasileiro por meio da extração de informações de vagas reais.  
+As descrições textuais foram processadas com apoio de IA para converter requisitos técnicos em métricas estruturadas, classificadas como:
+
+- **Obrigatório**
+- **Diferencial**
+
+Essa abordagem permite identificar padrões de exigência técnica ao longo da progressão de carreira.
 
 ---
 
 ## 2. Evolução por Senioridade
 
+### 🟢 Júnior (101 Vagas)
+
+**Resumo Executivo:**  
+O nível Júnior é dominado por ferramentas de BI e análise básica. Diferenciais técnicos ainda não são amplamente exigidos, mas já criam vantagem competitiva.
+
+**Principais achados:**
+- **Obrigatório:** Power BI (27,36%), Excel Avançado (20,27%) e SQL (18,58%)
+- **Diferencial:** Bibliotecas Python (8,85%) e Tableau (5,31%)
+- **Leitura estratégica:** Python começa a separar candidatos já no início da carreira
+
 <p align="center">
-  <img src="./docs/images/junior_project.png" width="700">
+  <img src="../images/junior_project.png" width="700">
 </p>
 
-###  Júnior (101 Vagas)
-* **Base [Obrigatório]:** Domínio de **Power BI** (27,36%), Excel Avançado (20,27%) e SQL (18,58%).
-* **[Diferencial] de Destaque:** **Bibliotecas Python** (8,85%) e Tableau (5,31%) aparecem como as principais ferramentas para superar a concorrência inicial.
-* **Visão Técnica:** Sem a tríade básica, **Bibliotecas Python (Pandas, NumPy)** (14,16%) e ETL (6,44%) lideram a lista de exigências.
+---
 
-###  Pleno (137 Vagas)
-* **Migração Técnica [Obrigatório]:** **Power BI** (37,50%) e SQL (35,81%) continuam fortes, mas o **Python** (28,38%) torna-se um pilar de sustentação.
-* **O Valor do Tableau:** Ocupa um papel estratégico como **[Diferencial]** (7,21%) e sua obrigatoriedade técnica salta para 10,73% quando ignoramos as ferramentas básicas.
-* **Novos Requisitos:** ETL e Machine Learning surgem como diferenciais críticos (9,91% cada).
+### 🟡 Pleno (137 Vagas)
 
-###  Sênior (64 Vagas)
-* **Arquitetura e Escala [Obrigatório]:** O foco muda para Cloud (AWS 10,34% como diferencial) e Big Data (9,48%).
-* **Especialização:** O ETL atinge seu maior nível de obrigatoriedade técnica (13,26%).
-* **Governança e Orquestração:** Machine Learning (8,60%), Git (3,94%) e **Apache Airflow** consolidam-se como requisitos para liderança de projetos.
+**Resumo Executivo:**  
+No nível Pleno ocorre a transição crítica de BI para engenharia analítica. Python deixa de ser diferencial e passa a ser um pilar técnico.
+
+**Principais achados:**
+- **Obrigatório:** Power BI (37,50%), SQL (35,81%) e Python (28,38%)
+- **Diferencial estratégico:** Tableau (7,21%)
+- **Mudança estrutural:** ETL e Machine Learning surgem como exigências recorrentes (9,91%)
+
+<p align="center">
+  <img src="../images/pleno_project.png" width="700">
+</p>
+
+---
+
+### 🔵 Sênior (64 Vagas)
+
+**Resumo Executivo:**  
+O foco no nível Sênior migra da análise para arquitetura, escala e governança de dados.
+
+**Principais achados:**
+- **Obrigatório:** SQL (18,24%), Python (15,54%) e ETL (12,50%)
+- **Diferencial dominante:** AWS (10,34%) e Big Data (9,48%)
+- **Leitura técnica:** Senioridade está associada à capacidade de orquestrar pipelines e ambientes complexos
+
+<p align="center">
+  <img src="../images/senior_project.png" width="700">
+</p>
 
 ---
 
 ## 3. O Peso Estratégico do Tableau
-Embora o **Power BI** seja a ferramenta universal em volume, o Tableau é identificado nos dados como o principal "divisor de águas". Ele atinge seu pico de importância no nível Pleno, onde é o terceiro maior diferencial (7,21%) e apresenta uma obrigatoriedade técnica de 10,73% para vagas que buscam especialização fora do ecossistema Microsoft.
+
+Embora o **Power BI** concentre o maior volume de exigências ao longo da carreira, o **Tableau** surge como o principal diferencial competitivo.
+
+Seu pico ocorre no nível Pleno, onde:
+- é o **3º maior diferencial técnico (7,21%)**
+- atinge **10,73% de obrigatoriedade técnica** quando ferramentas básicas são desconsideradas
+
+Isso indica que o Tableau funciona como um **marcador de especialização**, especialmente fora do ecossistema Microsoft.
 
 ---
 
 ## 4. Recomendações de Carreira (Pathing)
 
-1.  **Início (Júnior):** Foque em **Power BI** e SQL, mas estude Tableau para entrar no grupo de elite com diferenciais técnicos.
-2.  **Meio (Pleno):** Domine **Bibliotecas Python** (Pandas, NumPy) e processos de ETL. Use o Tableau para visualizações de maior complexidade e performance.
-3.  **Fim (Sênior):** Direcione o aprendizado para arquitetura em Nuvem (AWS/Azure) e **Orquestração** de grandes volumes de dados com **Apache Airflow**.
+1. **Início (Júnior):**  
+   Priorize Power BI e SQL. Estude Bibliotecas Python e Tableau para criar diferenciais competitivos.
+
+2. **Meio (Pleno):**  
+   Domine Python (Pandas, NumPy), ETL e consolide SQL. Use Tableau para visualizações mais complexas.
+
+3. **Fim (Sênior):**  
+   Direcione o aprendizado para arquitetura em nuvem (AWS/Azure), Big Data e orquestração de pipelines (ex.: Apache Airflow).
 
 ---
 
 ## 5. Conclusão
-A análise demonstra que o profissional deve evoluir de um perfil de "consumo de dados" (Júnior/BI) para um perfil de "construção de arquitetura" (Sênior/ETL/Cloud). O Tableau atua como uma ponte estratégica nessa evolução, oferecendo um diferencial competitivo sólido para quem busca posições de maior senioridade e especialização técnica.
+
+A análise demonstra uma progressão clara do mercado:  
+o profissional evolui de um perfil focado em **consumo de dados** (Júnior/BI) para um perfil de **construção e governança de arquitetura** (Sênior/ETL/Cloud).
+
+O Tableau atua como uma ponte estratégica nesse caminho, oferecendo um diferencial competitivo sólido para quem busca posições de maior senioridade e especialização técnica.
+
 
 
 
