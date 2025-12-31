@@ -64,22 +64,22 @@ O fluxo do projeto segue:
 
 ## 1. Contexto Global: A Explosão de Dados
 
-O volume global de dados cresce em ritmo exponencial. Estudos consolidados do mercado indicam que **mais de 90% de todos os dados existentes no mundo foram gerados apenas nos últimos dois anos**, impulsionados principalmente por:
+O volume global de dados cresce em ritmo exponencial. Estudos de mercado indicam que **mais de 90% de todos os dados existentes no mundo foram gerados nos últimos dois anos**, com o total de dados estimado para alcançar **181 zettabytes até 2025**. Esse crescimento é impulsionado principalmente por:
 
 - Cloud Computing  
-- Internet das Coisas (IoT)  
+- Internet of Things (IoT) 
 - Streaming de vídeo e áudio  
 - Inteligência Artificial e Machine Learning  
 - Sistemas transacionais digitais em larga escala  
 
-Esse crescimento torna **inviável** a gestão de dados por meio de soluções locais, manuais ou exclusivamente analíticas.
+Esse aumento massivo torna inviável a gestão de dados apenas com soluções locais, manuais ou exclusivamente analíticas. **Dados em escala só podem ser gerenciados, processados e consumidos de forma eficiente em ambientes distribuídos e baseados em nuvem.**
 
-> **Dados em escala só são viáveis quando armazenados, processados e orquestrados em ambientes distribuídos e baseados em nuvem.**
-
-Nesse contexto, **Cloud deixa de ser uma tecnologia isolada** e passa a ser o **ambiente base** onde dados são gerados, armazenados e consumidos — impactando **todos os níveis de senioridade**, ainda que de formas diferentes.
+Nesse contexto, a **Cloud deixa de ser uma tecnologia isolada** e passa a ser o **ambiente central** onde dados são gerados, armazenados e consumidos — impactando todos os níveis de senioridade, ainda que de formas diferentes.
 
 Este projeto parte dessa realidade global para analisar **como o mercado brasileiro traduz essa explosão de dados em exigências técnicas concretas**, segmentadas por nível de senioridade.
-> Fonte: [Rivery – Big Data Statistics: How Much Data is There in the World?](https://rivery.io/blog/big-data-statistics-how-much-data-is-there-in-the-world/)
+
+> **Fonte:** Gitnux Big Data & Analytics Market Report (2024) — compilação de estatísticas de volume de dados, tendências tecnológicas e mercado de análise de dados.
+
 
 
 ---
