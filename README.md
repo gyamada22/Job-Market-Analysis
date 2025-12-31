@@ -48,8 +48,8 @@ O nível Júnior está concentrado no **consumo e visualização de dados**, com
 A exigência por escala e arquitetura ainda é baixa, refletindo o papel operacional esperado nesse estágio da carreira.
 
 **Principais Insights**
-- **Obrigatório:** Power BI (81,82%), Excel Avançado (60,61%) e SQL (55,56%)
-- **Diferencial:** Python (27,03%), Tableau e Big Data (16,22%)
+- **Obrigatório:** Power BI (81,82%), Excel Avançado (59,60%) e SQL (55,56%)
+- **Diferencial:** Python (27,03%), Cloud e Tableau  (16,22%)
 
 **Leitura Técnica**  
 Neste nível, o mercado prioriza a capacidade de **interpretar dados existentes**, e não de construir infraestruturas complexas.  
@@ -69,7 +69,7 @@ O nível Pleno representa o **ponto de transição estrutural** entre análise e
 
 **Principais Insights**
 - **Obrigatório:** Power BI (82,84%), SQL (79,10%) e Python (62,69%)
-- **Diferenciais estratégicos:** ETL (20,75%), Machine Learning (20,75%) e Tableau (15,09%)
+- **Diferenciais estratégicos:** ETL (20,75%), Cloud (16,98%) e Tableau (15,09%)
 
 **Leitura Técnica**  
 Aqui, Python deixa de ser diferencial e passa a ser **fundamental**.  
@@ -89,8 +89,8 @@ No nível Sênior, o foco migra definitivamente da análise para **arquitetura, 
 Esse movimento está diretamente ligado à explosão global do volume de dados, que exige soluções robustas, distribuídas e altamente confiáveis.
 
 **Principais Insights**
-- **Obrigatório:** Power BI (85,94%), SQL (84,38%) e Python (71,88%)
-- **Diferenciais dominantes:** AWS (46,15%), Big Data (42,31%) e ETL (23,08%)
+- **Obrigatório:** Power BI (89,06%), SQL (84,38%) e Python (71,88%)
+- **Diferenciais dominantes:** Cloud (50,00%), Big Data (38,46%) e ETL (23,08%)
 
 **Leitura Técnica**  
 A senioridade Sênior está associada à capacidade de **operar ambientes complexos em larga escala**, incluindo:
