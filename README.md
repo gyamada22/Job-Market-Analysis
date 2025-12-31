@@ -19,7 +19,7 @@ Essa abordagem permite identificar padrões de exigência técnica ao longo da p
 
 ## 2. Evolução por Senioridade
 
-### 🟢 Júnior (101 Vagas)
+###  Júnior (101 Vagas)
 
 **Visão Geral:**  
 O nível Júnior é dominado por ferramentas de BI e análise básica. Diferenciais técnicos ainda não são amplamente exigidos, mas já criam vantagem competitiva.
@@ -37,7 +37,7 @@ O nível Júnior é dominado por ferramentas de BI e análise básica. Diferenci
 
 ---
 
-### 🟡 Pleno (137 Vagas)
+###  Pleno (137 Vagas)
 
 **Visão Geral:**  
 No nível Pleno ocorre a transição crítica de BI para engenharia analítica. Python deixa de ser diferencial e passa a ser um pilar técnico.
@@ -54,7 +54,7 @@ No nível Pleno ocorre a transição crítica de BI para engenharia analítica. 
 
 ---
 
-### 🔵 Sênior (64 Vagas)
+###  Sênior (64 Vagas)
 
 **Visão Geral:**  
 O foco no nível Sênior migra da análise para arquitetura, escala e governança de dados.
