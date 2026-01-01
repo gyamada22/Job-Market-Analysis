@@ -75,9 +75,38 @@ Essa evolução reflete a transição de um pipeline **local e monolítico** par
 ---
 ## 📂 Estrutura do Repositório
 
-<p align="left">
-  <img src="./docs/images/Repo_Structure.png" width="40%">
-</p>
+```text
+├── data/
+│   ├── raw/
+│   │   ├── README.md
+│   │   └── Vagas_Coletadas_Raw.xlsx
+│   └── processed/
+│       ├── README.md
+│       └── Vagas_Coletadas_Cleaned.xlsx
+│
+├── docs/
+│   ├── images/
+│   ├── README.md
+│   └── dbtest.md
+│
+├── models/
+│   ├── sources/
+│   └── gold/
+│
+├── scripts/
+│   ├── ETL.py
+│   └── README.md
+│
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── dbt_project.yml
+├── requirements.txt
+├── LICENSE
+└── README.md
+
+```
 
 ---
 
