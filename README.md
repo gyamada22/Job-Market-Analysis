@@ -220,7 +220,7 @@ Isso indica que o Tableau atua como um **marcador de especialização**, especia
   Python, Tableau e **contato inicial com Cloud** funcionam como diferenciais importantes.
 
 - **Pleno:**  
-  Consolidação de Bibliotecas Python (Pandas, NumPy), ETL e SQL.  
+  Consolidação de Bibliotecas Python (Pandas, NumPy), ETL e SQL avançado.  
   **Cloud surge como diferencial estratégico**, refletindo a transição para ambientes de dados orientados à escala.
 
 - **Sênior:**  
