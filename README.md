@@ -41,6 +41,27 @@ O fluxo do projeto segue:
 
 ---
 
+## 🔄 Evolução da Arquitetura do Pipeline
+
+### Arquitetura Inicial
+- ETL em **Python**
+- Persistência dos dados tratados em **SQL Server local (SSMS)**
+- Execução dependente do ambiente do desenvolvedor
+- Transformações concentradas no script Python
+
+### Arquitetura Atual
+- ETL em **Python** com carga direta no **Snowflake**
+- **dbt** responsável pela modelagem analítica e camadas Silver/Gold
+- **Docker** garantindo ambiente isolado, reproduzível e agnóstico à máquina
+- Separação clara entre:
+  - Ingestão e limpeza (Python)
+  - Transformação analítica (dbt)
+  - Consumo (Power BI)
+
+Essa evolução reflete a transição de um pipeline **local e monolítico** para uma **arquitetura moderna, escalável e alinhada às boas práticas de engenharia de dados**.
+
+---
+
 ## 📂 Estrutura do Repositório
 
 <p align="left">
