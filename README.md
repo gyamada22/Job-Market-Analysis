@@ -47,7 +47,7 @@ Coleta (IA) ⟶ Limpeza & ETL (Python) ⟶ Modelagem & Análise (SQL / dbt) ⟶ 
 
 ---
 
-## 🔄 Evolução da Arquitetura do Pipeline
+##  Evolução da Arquitetura do Pipeline
 
 ### Arquitetura Inicial
 - ETL em **Python**
